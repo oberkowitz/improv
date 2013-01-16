@@ -1,0 +1,12 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="static/style.css" />
+<title>List of Games</title>
+
+<div class=page>
+  <h1>List of Games</h1>
+  <h2>Tonight's games are: </h2>
+  {% for game in l %}
+  	<p>{{game}}</p>
+  {% endfor %}
+  <a href="/something_else">To the first game!</a>
+</div>

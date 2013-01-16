@@ -1,0 +1,23 @@
+img {
+	border-style: solid;
+	border-width: 12pt;
+	border-color: blue;
+}
+p{
+	text-align: center;
+	font-size: 2em;
+	font-style: bold;
+	font-family: Comic;
+}
+h1{
+	text-align: center;
+}
+h2{
+	text-align: center;
+}
+a{
+	text-align: center;
+}
+title{
+	font-size: 1.3em;
+}

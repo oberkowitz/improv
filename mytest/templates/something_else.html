@@ -1,0 +1,45 @@
+<!doctype html>
+<title>{{game.name}}</title>
+<link rel="stylesheet" type="text/css" href="static/style.css" />
+<style>
+    #columns {width: 1200px;}
+    #columns .column {
+        position: relative;
+        width: 46%;
+        padding: 2%;}
+    #columns .left { float: left;}
+    #columns .right {float: right;}
+
+</style>
+
+
+
+  <h1>{{game.name}}</h1>
+  <div id="columns">
+    <div class="left column">
+        <p>{{players[0]}}!</p>
+        <img height=400 width=550 src={{"/static/"+players[0]+".jpg"}}/>
+        {% if length>2%}
+        <p>{{players[2]}}!</p>
+        <img height=400 width=550 src={{"/static/"+players[2]+".jpg"}}/>
+        {% endif %}
+    </div>
+    <div class="right column">
+        <p>{{players[1]}}!</p>
+        <img height=400 width=550 src={{"/static/"+players[1]+".jpg"}}/>
+        {% if length >3%}
+        <p>{{players[3]}}!</p>
+        <img height=400 width=550 src={{"/static/"+players[3]+".jpg"}}/>
+        {% endif %}
+    </div>
+     <br>
+     {% if num < length %}
+     <a href="/something_else">To the next game!!!</a>
+     {% else%}
+     <a href="farewell">That's it!!!</a>
+     {%endif%}
+
+  
+  
+ 
+</div>
